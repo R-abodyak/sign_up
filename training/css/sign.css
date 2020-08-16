@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+    background: rgba(8, 8, 8, 0.4);
+}
+
+.sign_btn {
+    color: white;
+    font-weight: 600;
+    background-color: #841f30;
+    margin-top: 10pt;
+}
+
+.success {
+    color: #39aa66;
+    font-size: 12pt;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+.error {
+    font-size: 12pt;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+.error_input {
+    background-color: #ffffff;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+.atend {
+    padding-top: 4pt;
+    vertical-align: text-bottom;
+}
+
+.my_container {
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 2px 7px #740e30, -3px 2px 7px #740e30;
+}
+
+.allco {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.colhr {
+    border: 1px solid #72422a;
+}
