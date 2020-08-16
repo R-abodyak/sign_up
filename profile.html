@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> profile </title>
+    <meta charset="UTF-8">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="css/userprofile.css">
+</head>
+
+<body>
+    <div class="container  pt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body boxc">
+                        <div class="card-title mb-4">
+                            <div class="d-flex justify-content-start">
+
+                                <div class="userData offset-5">
+
+                                    <div class="d-block" style="font-size: 3rem; font-weight: bold" id="first"> </div>
+
+                                </div>
+                                <div class="ml-auto">
+                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 offset-4">
+                                <div class="tab-content ml-1" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5  siz">
+                                                <label style="font-weight:bold;">Full Name</label>
+                                            </div>
+                                            <div class="col-md-8 col-6 siz">
+                                                <div id="name"> </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5 siz">
+                                                <label style="font-weight:bold;">Birth Date</label>
+                                            </div>
+                                            <div class="col-md-8 col-6 siz">
+                                                <div id="birth"></div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5 siz">
+                                                <label style="font-weight:bold;">Email </label>
+                                            </div>
+                                            <div class="col-md-8 col-6 siz">
+                                                <div id="email"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5 siz">
+                                                <label style="font-weight:bold;">phone</label>
+                                            </div>
+                                            <div class="col-md-8 col-6 siz">
+                                                <div id="phone"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5 siz">
+                                                <label style="font-weight:bold;">Gender</label>
+                                            </div>
+                                            <div class="col-md-8 col-6 siz">
+                                                <div id="gender"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-3 col-md-2 col-5 offset-1 siz">
+                                                <button type="button" class="  btn  btn-block qy   " style="color: white;
+                                            font-size:16pt;background-color: #596e79;margin-top: 10pt;" value="sign">Edit</button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        {
+
+            $.ajax({
+                method: "post",
+                url: "getprofileinfo.php",
+                data: {},
+
+                success: function(data, status, xhr) {
+                    var obj = JSON.parse(data);
+
+                    var name = obj.first + "         " + obj.last;
+                    var birth = obj.birth;
+                    var gender = obj.gender;
+                    var email = obj.email;
+                    var phone = obj.phone;
+                    var first = 'Hi' + "     " + obj.first;;
+                    $('#first').html(first);
+                    $('#name').html(name);
+                    $('#birth').html(birth);
+                    $('#gender').html(gender);
+                    $('#email').html(email);
+                    $('#phone').html(phone);
+
+
+
+                },
+                error: function(xhr, status, err) {
+                    alert("eror in response");
+                    console.log(err);
+                },
+            })
+        }
+    });
+</script>
