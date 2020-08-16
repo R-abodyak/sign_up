@@ -1,0 +1,277 @@
+.profile {
+    background: white;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.over {
+    padding-top: 20px;
+    padding-bottom: 109px;
+    background: rgba(52, 45, 45, 0.7);
+
+}
+.profile .cover{
+    width: 104%;
+    position: relative;
+    height: -webkit-fill-available;
+    height: 100%;
+    clip-path: polygon(100% 0, 96% 27%, 98% 50%, 95% 71%, 100% 100%, 50% 100%, 18% 100%, 0 100%, 0% 35%, 0 0);}
+.btnn {
+  color: #200525
+;font-size: 27px;border: 3px outset white;
+
+}
+.load{
+    background: #200525;
+    top: -65px;
+    position: relative;
+    border: none;
+    display: none;
+    height: 65px;
+    transition: all .7s;
+}
+.profile .cover .pc {
+    width:100%;
+    height: -webkit-fill-available;
+    transition : all .7s; }
+
+        button:active {
+            transform: translateY(4px);}
+
+        .alert {
+            margin-top: 37px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            width: 40%;
+            left: 30%;}
+        .alert .alert-danger {
+            background: #200525;}
+        .alert .alert-success {
+            background: #200525;}
+
+
+.update {
+    background: #eee6e9;
+    position: relative;
+        width: 50%;
+       left: 25%;
+    border: 4px solid #eee6e9;
+    margin-top: 25px;
+    padding-bottom: 9px;
+    padding-top: 67px;
+    border-radius: 36px;
+    box-shadow: 1px 0px 4px 2px #e9d1da;
+
+
+        }
+
+.update label {
+    font-size: 15px;
+    color: #200525;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+        .profile .load button {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            left: 41%;
+            margin-top: 17px;
+        }
+        .profile .cover .up{
+            width :64px;
+            height: 64px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;}
+
+
+
+        .profile .cover:hover .load{
+            display: block;
+        }
+
+        .profile .cover:hover .pc{
+        transform: translateY(-65px); }
+
+        .content {
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            background: #f3f3f3;
+            clip-path: polygon(50% 0%, 100% 8%, 100% 19%, 97% 45%, 100% 93%, 50% 100%, 0 94%, 3% 47%, 0 13%, 0 9%);
+        }
+
+        .content img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+
+        }
+        h3,h4 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            position: relative;
+            color: #180b19;
+            left: -3%;
+            text-shadow: -1px -1px #200525;
+        }
+        .title {
+            position: relative;
+            left: -6%;
+            width: 80%;
+
+        }
+        .cover button {background :transparent; border:none; outline: none;
+
+        }
+        /********Update**********/
+        .fa-edit:before, .fa-pencil-square-o:before {
+            content: "\f044";
+            color: #200525;
+            left: 1%;
+            position: relative;
+            left: -5px;
+            top: -3px;}
+        .update input {
+            height: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #5c2765;
+            margin-bottom: 7px;
+
+        }
+        .update .edit {
+            background: transparent;
+            outline: none;
+            width: 30px;
+            height: 30px;
+
+        }
+        .update input[type="text"]:disabled  {
+            background: #7c7074;
+            color: white;
+           font-size: 15px;
+           border: 2px outset #200525;
+        }
+        .update .separetor {
+            border-top: 1px double #200525;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 90%;
+            position: relative;
+            left: 5%;
+        }
+
+button:active {
+    transform: translateY(4px);
+}
+.messagephp {
+    background: #928182;
+    color: white;
+    margin-bottom: 10px;
+}
+
+        .update .setPass { display: none;}
+.ds {
+    display: none;
+
+}
+.update h3 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 27px;
+    width: 94%;
+
+}
+
+
+
+        .update h4 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #200525;
+            text-align: center;
+            margin-bottom: 30px;}
+
+        .update .pass {
+            margin-bottom :20px;
+        }
+        .phone{
+            display: none;
+        }
+        .update #saveName,  .update #savePass, #cancelpass , #cancelName ,#savephone , #cancelphone, #saveall{
+            color: white;
+            width: 100%;
+            outline: none;
+            background: #200525;
+
+            font-size: 15px;
+            border: 1px outset #200525;
+        }
+	
+
+        .back {
+            position: absolute;
+            right: 0%;
+            top: 5%;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back img {
+            width: 30px;
+            height: 30px;
+        }
+
+.popup {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+left:0;
+    background: rgba(19, 1, 21, 0.8);
+
+}
+
+		
+#button {
+position: absolute;
+    bottom: -32px;
+    left: 22%;
+    background: #200525;
+    color: white;
+    font-size: 22px;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    padding: 8px;
+    width: 56%;
+	
+}
+
+
+        .uploadImage{
+           width: 50%;
+    padding-top: 12px;
+    height: 85%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    color: #200525;
+    background: #ebe5ec;
+		}
